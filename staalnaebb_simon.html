@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboration 1</title>
+    <meta
+      name="description"
+      content="Laboration ett av två i kursen Responsiv Webbdesign för studenter på Högskolan Dalarna"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/float.css" />
+    <link rel="stylesheet" href="./css/flexbox.css" />
+    <link rel="stylesheet" href="./css/css-grid.css" />
+  </head>
+
+  <body>
+    <header class="base">
+      <h1>Laboration 1</h1>
+    </header>
+    <nav class="base">
+      <a href="#float">Float</a>
+      <a href="#flexbox">Flexbox</a>
+      <a href="#css-grid">CSS-Grid</a>
+    </nav>
+    <main>
+      <section id="float">
+        <h2>Float</h2>
+        <!--FLOAT START-->
+        <div class="block--column">
+          <div>
+            <p class="block__text--float_right">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+              quibusdam, repellendus nobis libero consequuntur maxime incidunt
+              tempare aliquid laudantium enim ducimus nam saepe fuga alias quas
+              mollitia voluptatem ea parra!
+            </p>
+            <img
+              class="block__img_top--float"
+              src="./img/du.svg"
+              alt="Circle with the word 'DU' in it!"
+            />
+          </div>
+          <div>
+            <img class="block__img_middle--float" src="./img/kan.svg" alt="Square with the word 'KAN' in it!"/>
+            <p class="block__text_left--float">
+              <img class="block__img_bottom--float" src="./img/float.svg" alt="Square with the word 'FLOAT' in it!"/>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+              quibusdam, repellendus nobis libero consequuntur maxime incidunt
+              tempare aliquid laudantium enim ducimus nam saepe fuga alias quas
+              mollitia voluptatem ea parra! Lorem ipsum, dolar sit amet
+              consectetur adipisicing elit. Adispisci optio voluptates ab vitae
+              magni magnam rerum. Illabcaecati illum, minima pravident debitis
+              perferendis voluptatem optio elus?
+            </p>
+          </div>
+        </div>
+        <!--FLOAT STOP-->
+      </section>
+      <div class="divider"></div>
+      <section id="flexbox">
+        <h2>Flexbox</h2>
+        <!--FLEXBOX START-->
+        <div class="flexbox__container">
+          <div class="block__section--one">
+            <div class="block--clr1 block--formatter block--first"></div>
+            <div class="block--clr3 block--formatter block--second">
+              <p class="block__text">DU</p>
+            </div>
+            <div class="block--clr1 block--formatter block--third"></div>
+          </div>
+          <div class="block__section--two">
+            <div class="block--clr4 block--formatter block--first">
+              <p class="block__text">KAN</p>
+            </div>
+            <div class="block--clr1 block--formatter block--second"></div>
+            <div class="block--clr2 block--formatter block--third"></div>
+          </div>
+          <div class="block__section--three">
+            <div class="block--clr1 block--formatter block--first"></div>
+            <div class="block--clr2 block--formatter block--second"></div>
+            <div class="block--clr5 block--formatter block--third">
+              <p class="block__text">FLEXBOX</p>
+            </div>
+          </div>
+        </div>
+        <!--FLEXBOX STOP-->
+      </section>
+      <div class="divider"></div>
+      <section id="css-grid">
+        <h2>CSS-Grid</h2>
+        <!--CSS-GRID START-->
+        <div class="div_grid__container">
+          <div class="div_grid__selector">DU</div>
+          <div class="div_grid__selector">KAN</div>
+          <div class="div_grid__selector">CSS-GRID</div>
+          <div class="div_grid__selector"></div>
+          <div class="div_grid__selector"></div>
+          <div class="div_grid__selector"></div>
+          <div class="div_grid__selector"></div>
+          <div class="div_grid__selector"></div>
+          <div class="div_grid__selector"></div>
+          <div class="div_grid__selector"></div>
+          <div class="div_grid__selector"></div>
+          <div class="div_grid__selector"></div>
+          <div class="div_grid__selector"></div>
+          <div class="div_grid__selector"></div>
+        </div>
+        <!--CSS-GRID STOP-->
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

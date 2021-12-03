@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/*
+  Size: >= 1024px
+*/
+
+.div__img--float_top, .div__img--float_middle, .div__img--float_bottom{
+  margin: 0.5rem;
+}
+
+/*
+  Size: >= 750px & < 1024px
+*/
+
+@media screen and (min-width: 749.98px) and (max-width: 1022.98px) {
+  
+  .block--column {
+    columns: 1;
+  }
+
+  .block__img_top--float {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .block__img_middle--float {
+    margin: 0.25rem;
+    margin-right: 0rem;
+    margin-bottom: 8rem;
+    width: 47%;
+    float: left;
+  }
+  
+  .block__img_bottom--float {
+    margin: 0.25rem;
+    margin-left: 0rem;
+    width: 100%;
+    float: right;
+  }
+
+  .block__text_left--float {
+    float: right;
+    width: 47%;
+  }
+  
+}
+
+@media screen and (min-width: 1023.98px) {
+  
+  .block--column {
+    columns: 2;
+  }
+
+  .block__img_top--float {
+    float: right;
+    margin: 1rem 1rem 14rem 1rem;
+  }
+
+  .block__img_middle--float {
+    float: left;
+    margin: 1rem;
+    margin-left: 0rem;
+    width: 100%;
+  }
+
+  /* Report to Alexander as a potential Firefox Bug*/
+  /* Parenting and Child having Float seems to cause issues in the render stack*/
+  .block__content--column-second {
+    /*float: right;*/ 
+  }
+  
+  .block__img_bottom--float {
+    width: 40%;
+    float: right;
+    margin: 0.5rem;
+    T
+    margin-right: 0rem;
+  }
+
+  .block__text--float_right {
+    float: right;
+  }
+
+  .block__text--float_left {
+    float: left;
+  }
+}
